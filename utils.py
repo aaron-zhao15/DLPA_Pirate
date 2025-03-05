@@ -1,7 +1,7 @@
 import gym
 import os
 
-from gym.wrappers import Monitor
+from gym.wrappers.record_video import RecordVideo
 import random
 import matplotlib.pyplot as plt
 import torch
@@ -143,7 +143,7 @@ def make_env(args):
     else:
         raise f"Bad domain {args.env}, not implemented!"
 
-    env.seed(args.seed)
+    # env.seed(args.seed)
     
     args.ub = 1.0
     args.lb = -1.0

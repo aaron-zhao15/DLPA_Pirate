@@ -58,7 +58,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # 'Platform-v0', 'Goal-v0', "hard_goal-v0", 'simple_catch-v0', 'simple_move_4_direction_v1-v0'
-    parser.add_argument("--env", default='Platform-v0')  
+    parser.add_argument("--env", default='hard_goal-v0')  
     parser.add_argument("--seed", default=0, type=int)  # Sets Gym, PyTorch and Numpy seeds
     parser.add_argument("--max_timesteps", default=500_000, type=int)  # Max time steps to run environment for
     parser.add_argument("--eval_freq", default=50, type=int)  # How often (time steps) we evaluate
